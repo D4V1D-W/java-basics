@@ -10,11 +10,12 @@ Main goal: Systematically learn Java and create a portfolio that demonstrates my
 Progress Metrics
 ## 📈  Progress Metrics
 ```bash
-# Estado actual:
-✅ Primer repositorio creado
-🔄 Días consecutivos: 1
-📊 Prácticas completadas: 1
-🎯 Proyecto final: Por definir
+# Current status:
+✅ First repository created
+🔄 Consecutive days: 1
+📊 Practices completed: 1
+🏆 Mini-projects: 0
+🎯 Final project: To be defined
 ```
 
 
