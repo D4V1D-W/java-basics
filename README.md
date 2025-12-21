@@ -1,17 +1,20 @@
-# 🌱 Java Basics - Mi Viaje de Aprendizaje
+# 🌱 Java Basics - My Learning Journey
 
-¡Hola! Soy David y este es mi espacio de práctica diaria con Java. 
-Aquí documentaré mi progreso desde cero hasta construir proyectos profesionales.
+Hello! I'm David and this is my daily practice space with Java. Here I will document my progress from zero to building professional projects.
 
-## 🚀 Mi Misión
-> "Un commit al día, aleja la incompetencia de ti"
+## 🚀My Mission
+"One commit a day keeps incompetence away"
 
-**Objetivo principal:** Aprender Java sistemáticamente y crear un portafolio que demuestre mi crecimiento como desarrollador.
+Main goal: Systematically learn Java and create a portfolio that demonstrates my growth as a developer.
 
-## 📈 Métricas de Progreso
+Progress Metrics
+## 📈  Progress Metrics
 ```bash
 # Estado actual:
 ✅ Primer repositorio creado
 🔄 Días consecutivos: 1
 📊 Prácticas completadas: 1
 🎯 Proyecto final: Por definir
+```
+
+
