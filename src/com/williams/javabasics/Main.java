@@ -1,22 +1,35 @@
+
+/*
+ * Day 2 - Java Basics
+ *
+ * This program reads the user's age from the console using Scanner
+ * and determines whether the user is an adult or a minor.
+ *
+ * Concepts applied:
+ * - User input with Scanner
+ * - Conditional statements (if / else)
+ * - Console output
+ */
+
 package com.williams.javabasics;
 
-public class main {
-	
-	public static void Main(String[] args) {
-		
-		//simple program to check if a person is an adult
-		
-		int age = 17;
-		
-		if (age>=18 ){
-		System.out.println("adult");	
-		}
-		
-		else{
-	    System.out.println("Minor");
-		}
-	
-	}
+import java.util.Scanner;
 
+public class Main {
 
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        if (age >= 18) {
+            System.out.println("You are an adult");
+        } else {
+            System.out.println("You are a minor");
+        }
+
+        scanner.close();
+    }
 }
