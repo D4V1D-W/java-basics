@@ -12,8 +12,8 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 1
-📊 Practices completed: 1
+🔄 Consecutive days: 2
+📊 Practices completed: 2
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
