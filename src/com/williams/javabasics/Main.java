@@ -1,14 +1,9 @@
-
 /*
- * Day 2 - Java Basics
+ * Day 3 - Control Flow and Input Validation
  *
- * This program reads the user's age from the console using Scanner
- * and determines whether the user is an adult or a minor.
- *
- * Concepts applied:
- * - User input with Scanner
- * - Conditional statements (if / else)
- * - Console output
+ * This program asks the user for their age
+ * and determines whether they are a minor or an adult.
+ * It also validates incorrect inputs.
  */
 
 package com.williams.javabasics;
@@ -24,12 +19,15 @@ public class Main {
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
 
-        if (age >= 18) {
-            System.out.println("You are an adult");
+        if (age < 0) {
+            System.out.println("Invalid age.");
+        } else if (age < 18) {
+            System.out.println("You are a minor.");
         } else {
-            System.out.println("You are a minor");
+            System.out.println("You are an adult.");
         }
 
         scanner.close();
     }
 }
+
