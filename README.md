@@ -19,3 +19,44 @@ Progress Metrics
 ```
 
 
+
+## Day 1 – Variables and Conditional Logic
+- Java project setup
+- Variables declaration
+- `if / else` statements
+- Simple logic to determine if a person is an adult
+
+---
+
+## Day 2 – User Input with Scanner
+- Reading user input using `Scanner`
+- Handling integer input
+- Basic interaction through the console
+- Improving program usability
+
+---
+
+## Day 3 – Control Flow and Input Validation
+- Input validation using `hasNextInt()`
+- Handling invalid user input
+- Conditional logic with `if / else if / else`
+- Defensive programming practices
+
+---
+
+## Day 4 – Loops and Validation Logic
+- `while` loops
+- Repeating input until valid data is entered
+- Preventing program crashes
+- Cleaner and safer input handling
+
+---
+
+## Day 5 – Menus, Methods and Program Flow
+- Interactive menu using `while`
+- `switch` statement
+- Method separation
+- Program flow control
+- Building more realistic console applications
+
+---
