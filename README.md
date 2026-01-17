@@ -60,3 +60,11 @@ Progress Metrics
 - Building more realistic console applications
 
 ---
+
+## Day 6 – Classes and Objects (OOP Basics)
+- Introduction to Object-Oriented Programming (OOP)
+- Creation of classes and objects
+- Understanding attributes (state) and methods (behavior)
+- Using objects to access data and execute actions
+- Separating responsibilities between classes
+
