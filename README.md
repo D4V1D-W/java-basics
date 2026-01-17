@@ -68,3 +68,12 @@ Progress Metrics
 - Using objects to access data and execute actions
 - Separating responsibilities between classes
 
+---
+
+## Day 7 – Encapsulation (private, getters and setters)
+- Data encapsulation using private attributes
+- Controlled access with getters and setters
+- Using `this` keyword
+- Input validation inside setters
+- Writing safer and more maintainable code
+
