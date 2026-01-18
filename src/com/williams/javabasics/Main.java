@@ -1,8 +1,8 @@
 /*
- * Day 7 - Encapsulation (private, getters and setters)
+ * Day 8 - Constructors
  *
- * This program demonstrates encapsulation
- * by controlling access to class attributes.
+ * This program demonstrates the use of constructors
+ * to initialize objects.
  */
 
 package com.williams.javabasics;
@@ -11,10 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
     	
-    	Person person1 =new Person();
+    	Person person1 = new Person("David",20);
+    	Person person2 = new Person ();
     	
-    	person1.setName("David");
-    	person1.setAge(20);
+    
     	
     	person1.greet();
     	

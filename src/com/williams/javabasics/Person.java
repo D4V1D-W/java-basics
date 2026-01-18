@@ -5,17 +5,19 @@ public class Person {
 	private String name;
 	private int age;
 	
+    // Constructor with parameters
 	
-	public void setName(String name) {
+	public Person(String name,int age) {
 		this.name=name;
+		this.age=age;
 	}
 	
-	public void setAge(int age) {
-		if (age>=0) {
-		  this.age=age;
-		}
-	}
+	// Default constructor
 	
+    public Person () {
+		
+	} 
+
 	public String getName() {
 		return name;
 	}
