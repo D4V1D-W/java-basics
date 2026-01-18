@@ -77,3 +77,13 @@ Progress Metrics
 - Input validation inside setters
 - Writing safer and more maintainable code
 
+---
+
+## Day 8 – Constructors
+- Understanding constructors in Java
+- Initializing objects using constructors
+- Using default and parameterized constructors
+- Using `this` keyword
+- Creating safer object initialization
+
+
