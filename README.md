@@ -12,8 +12,8 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 7
-📊 Practices completed: 7
+🔄 Consecutive days: 8
+📊 Practices completed: 8
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
@@ -76,4 +76,14 @@ Progress Metrics
 - Using `this` keyword
 - Input validation inside setters
 - Writing safer and more maintainable code
+
+---
+
+## Day 8 – Constructors
+- Understanding constructors in Java
+- Initializing objects using constructors
+- Using default and parameterized constructors
+- Using `this` keyword
+- Creating safer object initialization
+
 
