@@ -1,8 +1,8 @@
 /*
- * Day 8 - Constructors
+ * Day 9 - Inheritance Practice
  *
- * This program demonstrates the use of constructors
- * to initialize objects.
+ * This program demonstrates inheritance in Java
+ * by using a Person parent class and a Student child class.
  */
 
 package com.williams.javabasics;
@@ -11,22 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
     	
-    	Person person1 = new Person("David",20);
-    	Person person2 = new Person ();
-    	
-    
-    	
-    	person1.greet();
-    	
-    	System.out.println("Age: "+ person1.getAge());
-    	
-    	
-    	if (person1.isAdult()) {
-    		System.out.println("The person is a Adult");
-    	}
-    	else {
-    		System.out.println("The person is a minor");
-    	}
-    	
+  Student student = new Student("David",20," Systems Engineering");
+  
+  student.greet();
+  student.study();
+  
     }
 }
