@@ -86,4 +86,15 @@ Progress Metrics
 - Using `this` keyword
 - Creating safer object initialization
 
+- ---
+
+- ## Day 9 – Inheritance
+
+- Implemented inheritance using `extends`
+- Created a parent class (`Person`)
+- Created a child class (`Student`)
+- Reused attributes and methods
+- Practiced the "is-a" relationship in Java
+
+
 
