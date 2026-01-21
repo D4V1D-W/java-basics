@@ -13,7 +13,7 @@ Progress Metrics
 # Current status:
 ✅ First repository created
 🔄 Consecutive days: 10
-📊 Practices completed: 9
+📊 Practices completed: 10
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
