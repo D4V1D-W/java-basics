@@ -86,7 +86,7 @@ Progress Metrics
 - Using `this` keyword
 - Creating safer object initialization
 
-- ---
+ ---
 
 - ## Day 9 – Inheritance
 
@@ -95,6 +95,26 @@ Progress Metrics
 - Created a child class (`Student`)
 - Reused attributes and methods
 - Practiced the "is-a" relationship in Java
+
+---
+
+- ## Day 10 – Polymorphism and Method Overriding
+
+On this day, I learned and applied polymorphism in Java using inheritance
+and encapsulation.
+
+Key concepts practiced:
+- Method overriding using `@Override`
+- Using parent class references to point to child class objects
+- Runtime method dispatch (dynamic polymorphism)
+- Clean object-oriented design without conditionals (`if` / `instanceof`)
+
+I implemented different behaviors for the same method (`greet()`)
+depending on the actual object type, reinforcing how Java resolves
+method calls at runtime.
+
+---
+
 
 
 
