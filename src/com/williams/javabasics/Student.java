@@ -1,9 +1,4 @@
-/*
- * Day 9 - Inheritance (Child Class)
- *
- * This class extends Person and represents a student.
- * It inherits attributes and methods from Person.
- */
+
 
 package com.williams.javabasics;
 
@@ -17,5 +12,15 @@ public Student(String name,int age,String career) {
 }
 public void study () {
 	System.out.println("is studying"+career);
+}
+
+@Override
+
+public void greet() {
+	System.out.println("Hi I'm Studen ");
+	System.out.println("Name: "+getName());
+	System.out.println("Age: "+getAge());
+	System.out.println("career: "+career);
+	
 }
 }

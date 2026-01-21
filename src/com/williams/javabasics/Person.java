@@ -1,10 +1,17 @@
 /*
- * Day 9 - Inheritance (Parent Class)
+ * Day 10 - Polymorphism and Method Overriding
  *
- * This class represents a generic person.
- * It contains common attributes and behaviors
- * that can be inherited by other classes.
+ * Concepts applied:
+ * - Inheritance (Student extends Person)
+ * - Encapsulation (private attributes + getters)
+ * - Polymorphism (Person reference pointing to Student object)
+ * - Method overriding using @Override
+ *
+ * This program demonstrates how Java decides which method
+ * implementation to execute at runtime based on the actual object,
+ * not the reference type.
  */
+
 
 package com.williams.javabasics;
 
@@ -29,6 +36,7 @@ public int getAge() {
 
 
 void greet() {
+	System.out.println("Hi I'm a Person");
 	System.out.println("name: "+name);
 	System.out.println("age: "+age);
 	
