@@ -115,6 +115,21 @@ method calls at runtime.
 
 ---
 
+## Day 11 – Abstraction and Interfaces
+
+On this day, I learned how to use interfaces in Java to achieve abstraction
+and decouple system components.
+
+Key concepts practiced:
+- Creating and using interfaces as contracts
+- Implementing interfaces with different classes
+- Applying polymorphism through interfaces
+- Designing flexible and scalable code
+
+This approach is fundamental for building real-world
+applications and is widely used in frameworks like Spring Boot.
+
+
 
 
 
