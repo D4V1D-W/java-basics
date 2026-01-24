@@ -8,7 +8,7 @@ Hello! I'm David and this is my daily practice space with Java. Here I will docu
 Main goal: Systematically learn Java and create a portfolio that demonstrates my growth as a developer.
 
 Progress Metrics
-## 📈  Progress Metrics
+## 📈  Progress Metrics 💪
 ```bash
 # Current status:
 ✅ First repository created
