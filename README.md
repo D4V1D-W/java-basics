@@ -129,6 +129,23 @@ Key concepts practiced:
 This approach is fundamental for building real-world
 applications and is widely used in frameworks like Spring Boot.
 
+--- Tomorrow...
+
+## Day 12 – Abstract Classes vs Interfaces
+
+On this day, I learned the difference between abstract classes
+and interfaces in Java and how they are used together.
+
+Key concepts practiced:
+- Creating abstract classes with shared state and behavior
+- Implementing abstract methods in child classes
+- Defining interfaces as contracts
+- Combining inheritance with interfaces
+
+This knowledge is essential for designing clean architectures
+and is widely used in enterprise frameworks like Spring.
+
+
 
 
 
