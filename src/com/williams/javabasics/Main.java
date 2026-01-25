@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
     	
-
+  // tests
   Person p2 = new Student("David",20," Systems Engineering");
   
   p2.greet();

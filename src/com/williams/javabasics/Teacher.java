@@ -12,6 +12,7 @@ public class Teacher extends Person implements Greetable {
 
      }
      
+     @Override
      public void showInfo() {
     		super.showInfo();
      }
