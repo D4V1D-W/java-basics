@@ -15,12 +15,16 @@ public void study () {
 }
 
 @Override
-
+	
+	
 public void greet() {
 	System.out.println("Hi I'm Studen ");
-	System.out.println("Name: "+getName());
-	System.out.println("Age: "+getAge());
-	System.out.println("career: "+career);
-	
 }
+
+public void showInfo() {
+	super.showInfo();
+	System.out.println("Career: "+career);
+}
+
+
 }
