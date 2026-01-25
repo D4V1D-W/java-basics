@@ -145,6 +145,16 @@ Key concepts practiced:
 This knowledge is essential for designing clean architectures
 and is widely used in enterprise frameworks like Spring.
 
+--- 
+
+## Day 13 – Abstract Classes
+- Use of abstract classes as base templates
+- Combination of implemented and abstract methods
+- Inheritance with partial logic
+- Use of super() to reuse constructors and behavior
+- Better system design with shared logic
+
+
 
 
 
