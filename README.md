@@ -129,7 +129,7 @@ Key concepts practiced:
 This approach is fundamental for building real-world
 applications and is widely used in frameworks like Spring Boot.
 
---- Tomorrow...
+--- 
 
 ## Day 12 – Abstract Classes vs Interfaces
 
