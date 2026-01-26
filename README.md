@@ -145,7 +145,7 @@ Key concepts practiced:
 This knowledge is essential for designing clean architectures
 and is widely used in enterprise frameworks like Spring.
 
---- Tomorrow
+--- 
 
 ## Day 13 – Abstract Classes
 - Use of abstract classes as base templates
