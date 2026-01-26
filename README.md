@@ -147,12 +147,14 @@ and is widely used in enterprise frameworks like Spring.
 
 --- 
 
-## Day 13 – Abstract Classes
-- Use of abstract classes as base templates
-- Combination of implemented and abstract methods
-- Inheritance with partial logic
-- Use of super() to reuse constructors and behavior
-- Better system design with shared logic
+## Day 13 – Abstract Classes and Design Improvement
+- Introduction to abstract classes in Java
+- Conversion of the Person class into an abstract class
+- Use of abstract methods to enforce implementation in subclasses
+- Implementation of specific behaviors in Student and Teacher using @Override
+- Improved object-oriented design through inheritance and abstraction
+- Refactoring without breaking existing functionality
+
 
 
 
