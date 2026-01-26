@@ -1,17 +1,16 @@
 /*
- * Day 12 - Abstract Classes vs Interfaces
+ * Day 13 - Abstract Classes and Advanced Inheritance
  *
- * Concepts applied:
- * - Abstract classes with shared logic
- * - Method overriding
- * - Interfaces as contracts
- * - Combining inheritance and interfaces
+ * In this day, abstract classes are introduced to define common behavior
+ * that must be implemented by subclasses.
  *
- * This program demonstrates the difference between
- * abstract classes and interfaces and when to use each.
+ * The Person class is converted into an abstract class,
+ * forcing child classes like Student and Teacher to implement
+ * specific behaviors using abstract methods.
+ *
+ * This improves design by ensuring a common contract
+ * and promotes cleaner and more scalable object-oriented architecture.
  */
-
-
 
 package com.williams.javabasics;
 
@@ -41,25 +40,23 @@ public class Main {
   a2.MakeSound();
 
   
-  //Day 12 Abstract classes vs Interfaces
+  //Day 12 and 13 Abstract classes vs Interfaces
   System.out.println();
   System.out.println("-------------------------------");
-  System.out.println("           Day 12 test:        ");
+  System.out.println("       Day 12 and 13 test:      ");
   System.out.println("===============================");
   System.out.println(" Abstract Classes vs Interfaces");
   System.out.println("===============================");
   System.out.println();
   
-  Person t = new Teacher("Jose",40);
+  Person t = new Teacher("Jose",40,"Math");
   Person e = new Student("Williams",22,"Systems Engineering");
   
   t.greet();
   t.showInfo();
-  System.out.println();
+  System.out.println("----");
   e.greet();
   e.showInfo();
-  
-  
   
     }
 }
