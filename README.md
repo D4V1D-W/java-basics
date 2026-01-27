@@ -158,28 +158,28 @@ and is widely used in enterprise frameworks like Spring.
 --- 
 
 ## Day 14 – Polymorphism with Arrays
+- Use of arrays with parent class references (Person[])
+- Storing different child objects (Student, Teacher) in the same array
+- Iterating objects using for-each loop
+- Runtime method dispatch (dynamic polymorphism)
+- Cleaner and more scalable object management
 
 Today I learned how to use arrays with polymorphism to manage multiple objects in a cleaner and more scalable way.
 
 Instead of creating and using each object separately, I created an array of type Person and stored different objects like Student and Teacher.
+
 Then, I iterated through the array and called the same methods for all objects.
 
 Thanks to polymorphism, Java automatically executed the correct version of each method depending on the real object type.
 
-Concepts practiced:
+Concepts applied together:
+- Encapsulation  
+- Inheritance  
+- Interfaces  
+- Method overriding  
 
--Using arrays with parent class references.
--Polymorphism with multiple objects.
--Runtime method dispatch.
--Iterating objects with for-each.
--Applying together:
--Encapsulation
--Inheritance
--Interfaces
--Method overriding
--Polymorphism
+---
 
-This approach makes the code more organized, flexible and closer to real-world object-oriented design.
   
 
 
