@@ -1,4 +1,4 @@
-# 🌱 Java Basics - My Learning Journey
+S# 🌱 Java Basics - My Learning Journey
 
 Hello! I'm David and this is my daily practice space with Java. Here I will document my progress from zero to building professional projects.
 
@@ -157,7 +157,7 @@ and is widely used in enterprise frameworks like Spring.
 
 --- 
 
-Day 14 – Polymorphism with Arrays
+## Day 14 – Polymorphism with Arrays
 
 Today I learned how to use arrays with polymorphism to manage multiple objects in a cleaner and more scalable way.
 
@@ -168,25 +168,16 @@ Thanks to polymorphism, Java automatically executed the correct version of each 
 
 Concepts practiced:
 
-Using arrays with parent class references.
-
-Polymorphism with multiple objects.
-
-Runtime method dispatch.
-
-Iterating objects with for-each.
-
-Applying together:
-
-Encapsulation
-
-Inheritance
-
-Interfaces
-
-Method overriding
-
-Polymorphism
+-Using arrays with parent class references.
+-Polymorphism with multiple objects.
+-Runtime method dispatch.
+-Iterating objects with for-each.
+-Applying together:
+-Encapsulation
+-Inheritance
+-Interfaces
+-Method overriding
+-Polymorphism
 
 This approach makes the code more organized, flexible and closer to real-world object-oriented design.
   
