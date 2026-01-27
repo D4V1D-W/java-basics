@@ -155,6 +155,42 @@ and is widely used in enterprise frameworks like Spring.
 - Improved object-oriented design through inheritance and abstraction
 - Refactoring without breaking existing functionality
 
+--- 
+
+Day 14 – Polymorphism with Arrays
+
+Today I learned how to use arrays with polymorphism to manage multiple objects in a cleaner and more scalable way.
+
+Instead of creating and using each object separately, I created an array of type Person and stored different objects like Student and Teacher.
+Then, I iterated through the array and called the same methods for all objects.
+
+Thanks to polymorphism, Java automatically executed the correct version of each method depending on the real object type.
+
+Concepts practiced:
+
+Using arrays with parent class references.
+
+Polymorphism with multiple objects.
+
+Runtime method dispatch.
+
+Iterating objects with for-each.
+
+Applying together:
+
+Encapsulation
+
+Inheritance
+
+Interfaces
+
+Method overriding
+
+Polymorphism
+
+This approach makes the code more organized, flexible and closer to real-world object-oriented design.
+  
+
 
 
 
