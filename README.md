@@ -1,4 +1,4 @@
-S# 🌱 Java Basics - My Learning Journey
+# 🌱 Java Basics - My Learning Journey
 
 Hello! I'm David and this is my daily practice space with Java. Here I will document my progress from zero to building professional projects.
 
