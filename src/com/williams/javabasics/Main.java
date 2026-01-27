@@ -1,5 +1,5 @@
 /*
- * Day 14 - Interfaces and Real Polymorphism
+ * Day 14 - Interfaces and Real Polymorphism (Polymorphism with Arrays)
  *
  * In this day, interfaces are used to define common behavior
  * that can be implemented by multiple unrelated classes.
