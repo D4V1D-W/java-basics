@@ -180,6 +180,36 @@ Concepts applied together:
 
 ---
 
+Day 15 – Polymorphism with ArrayList
+
+Introduction to Java Collections using ArrayList
+
+Replacement of fixed-size arrays with dynamic collections
+
+Managing multiple objects using a parent class reference (Person)
+
+Applying polymorphism with collections
+
+Iterating objects using enhanced for-each loop
+
+Cleaner and more scalable object management
+
+Reinforcing object-oriented principles without modifying existing classes
+
+Concepts practiced
+
+Polymorphism with collections
+
+Abstract classes
+
+Method overriding
+
+Inheritance
+
+Encapsulation
+
+Dynamic object handling with ArrayList
+
   
 
 
