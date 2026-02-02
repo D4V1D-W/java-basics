@@ -70,9 +70,10 @@ public class Main {
 	  
 	  System.out.println();
 	  System.out.println("--------------------------------");
-	  System.out.println("          test Array            ");
+	  System.out.println("          test Arraylist        ");
 	  System.out.println("================================");
 	  System.out.println();
+	  
 	  
 	  //ArrayList
 	  
