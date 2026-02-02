@@ -1,9 +1,9 @@
-/*"Day 15 - Polymorphism with ArrayList"
+/*Day 16 - Programming to interfaces using List
 */
 
 package com.williams.javabasics;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -70,14 +70,14 @@ public class Main {
 	  
 	  System.out.println();
 	  System.out.println("--------------------------------");
-	  System.out.println("          test Arraylist        ");
+	  System.out.println("      test Arraylist/List       ");
 	  System.out.println("================================");
 	  System.out.println();
 	  
 	  
 	  //ArrayList
 	  
-      ArrayList<Person> people=new ArrayList<>();	 
+      List<Person> people=new ArrayList<>();	 
       
       people.add(new Student("Dave",22,"Systems Engineering"));
       people.add(new Teacher("Ana",30,"Mathematics"));
