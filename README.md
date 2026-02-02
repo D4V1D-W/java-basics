@@ -180,35 +180,21 @@ Concepts applied together:
 
 --- TOMORROW..
 
-Day 15 – Polymorphism with ArrayList
+## Day 15 – Polymorphism with ArrayList
+- Introduction to Java Collections using ArrayList
+- Replacement of fixed-size arrays with dynamic collections
+- Managing multiple objects using a parent class reference (Person)
+- Applying polymorphism with collections
+- Iterating objects using enhanced for-each loop
+- Cleaner and more scalable object-oriented design
 
-Introduction to Java Collections using ArrayList
+On this day, I replaced arrays with an ArrayList to store and manage multiple objects such as Student and Teacher using the Person parent class.
 
-Replacement of fixed-size arrays with dynamic collections
+By using an ArrayList, objects can be added dynamically, making the program more flexible and closer to real-world Java applications.
 
-Managing multiple objects using a parent class reference (Person)
+Polymorphism ensures that the correct overridden methods are executed at runtime when iterating through the collection.
 
-Applying polymorphism with collections
-
-Iterating objects using enhanced for-each loop
-
-Cleaner and more scalable object management
-
-Reinforcing object-oriented principles without modifying existing classes
-
-Concepts practiced
-
-Polymorphism with collections
-
-Abstract classes
-
-Method overriding
-
-Inheritance
-
-Encapsulation
-
-Dynamic object handling with ArrayList
+---
 
   
 
