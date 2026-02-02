@@ -196,6 +196,22 @@ Polymorphism ensures that the correct overridden methods are executed at runtime
 
 ---
 
+## Day 16 – Programming to Interfaces with List
+- Introduction to programming against interfaces
+- Using List instead of concrete implementations
+- Improved flexibility and decoupled design
+- Polymorphism with collections
+- Cleaner and more professional object-oriented architecture
+
+On this day, I refactored the code to use the List interface instead of directly using ArrayList.
+
+This approach allows changing the underlying collection implementation without affecting the rest of the program, improving flexibility and maintainability.
+
+This design follows best practices used in real-world Java applications and frameworks like Spring Boot.
+
+---
+
+
   
 
 
