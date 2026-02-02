@@ -1,18 +1,9 @@
-/*
- * Day 14 - Interfaces and Real Polymorphism (Polymorphism with Arrays)
- *
- * In this day, interfaces are used to define common behavior
- * that can be implemented by multiple unrelated classes.
- *
- * The Greetable interface is created and implemented by
- * different classes such as Person, Student and Teacher.
- *
- * This allows true polymorphism by programming to an interface
- * instead of concrete classes, following best practices
- * in object-oriented design.
- */
+/*"Day 15 - Polymorphism with ArrayList"
+*/
 
 package com.williams.javabasics;
+
+import java.util.ArrayList;
 
 public class Main {
 
@@ -82,18 +73,19 @@ public class Main {
 	  System.out.println("          test Array            ");
 	  System.out.println("================================");
 	  System.out.println();
-	  //Array
 	  
-	  Person[]people = {
-			  new Student("Ana",25,"Medicine"),
-			  new Teacher("Pedro", 40, "Physics")		  
-	  };
+	  //ArrayList
 	  
-	  for (Person p:people) {
-		  p.showInfo();
-		  System.out.println("----");
-	  }
-	  
+      ArrayList<Person> people=new ArrayList<>();	 
+      
+      people.add(new Student("Dave",22,"Systems Engineering"));
+      people.add(new Teacher("Ana",30,"Mathematics"));
+      
+      for (Person p:people){
+    	  p.greet();
+    	  p.showInfo();
+    	  System.out.println("------");
+      }
     }
 }
 
