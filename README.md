@@ -211,6 +211,21 @@ This design follows best practices used in real-world Java applications and fram
 
 ---
 
+## Day 17 – Exception Handling in Java
+- Introduction to exception handling using try-catch-finally
+- Handling invalid data using IllegalArgumentException
+- Improving program robustness and stability
+- Preventing application crashes with controlled error handling
+- Applying validation logic to existing object-oriented design
+
+On this day, I added exception handling to manage invalid data and runtime errors without breaking the program.
+
+Using try-catch blocks, the application can handle errors gracefully and continue execution in a controlled way.
+
+This approach is essential for building reliable and professional Java applications, especially in backend development.
+
+---
+
 
   
 
