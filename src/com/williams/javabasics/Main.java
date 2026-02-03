@@ -1,4 +1,4 @@
-/*Day 16 - Programming to interfaces using List
+/*Day 17 - Exception handling and validation
 */
 
 package com.williams.javabasics;
@@ -77,9 +77,11 @@ public class Main {
 	  
 	  //ArrayList
 	  
+	  try {
+		  
       List<Person> people=new ArrayList<>();	 
       
-      people.add(new Student("Dave",22,"Systems Engineering"));
+      people.add(new Student("Dave",-1,"Systems Engineering"));
       people.add(new Teacher("Ana",30,"Mathematics"));
       
       for (Person p:people){
@@ -87,6 +89,16 @@ public class Main {
     	  p.showInfo();
     	  System.out.println("------");
       }
+      
+	     }catch (IllegalArgumentException er) {
+	    	 System.out.println("Error: "+er.getMessage());
+	    	 
+	     }finally {
+	    	 System.out.println("Program finished");
+	     }
+	  
+	  
+	  
     }
 }
 
