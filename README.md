@@ -226,6 +226,21 @@ This approach is essential for building reliable and professional Java applicati
 
 ---
 
+Day 18 – Custom Exceptions in Java
+
+Introduction to custom exceptions in Java
+
+Creating user-defined exceptions by extending RuntimeException
+
+Applying domain-specific validation rules
+
+Improving error clarity and code readability
+
+Cleaner and more expressive error handling design
+
+On this day, I created a custom exception to represent specific business rules instead of relying only on generic exceptions.
+By extending RuntimeException, I was able to throw meaningful errors that clearly describe what went wrong in the program.
+This approach improves code readability, debugging, and aligns with professional Java backend development practices.
 
   
 
