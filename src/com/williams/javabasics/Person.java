@@ -9,7 +9,7 @@ public abstract class Person {
     public Person (String name,int age) {
     	
     	if (age < 0) {
-            throw new IllegalArgumentException("Age cannot be negative");
+            throw new InvalidAgeException("Age cannot be negative");
         }
     	 
 	    this.name = name;

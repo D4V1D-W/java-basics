@@ -1,5 +1,4 @@
-/*Day 17 - Exception handling and validation
-*/
+/*Day 18 - Custom Exceptions in Java */
 
 package com.williams.javabasics;
 import java.util.ArrayList;
@@ -81,7 +80,7 @@ public class Main {
 		  
       List<Person> people=new ArrayList<>();	 
       
-      people.add(new Student("Dave",-1,"Systems Engineering"));
+      people.add(new Student("Dave",-20,"Systems Engineering"));
       people.add(new Teacher("Ana",30,"Mathematics"));
       
       for (Person p:people){
@@ -90,7 +89,7 @@ public class Main {
     	  System.out.println("------");
       }
       
-	     }catch (IllegalArgumentException er) {
+	     }catch (InvalidAgeException er) {
 	    	 System.out.println("Error: "+er.getMessage());
 	    	 
 	     }finally {
