@@ -12,8 +12,8 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 18
-📊 Practices completed: 18
+🔄 Consecutive days: 19
+📊 Practices completed: 19
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
@@ -238,6 +238,24 @@ On this day, I implemented a custom exception to handle specific business rules 
 By creating my own exception class and extending RuntimeException, I was able to represent errors in a clearer and more meaningful way, improving code readability and maintainability.
 
 This approach reflects real-world Java backend practices and prepares the codebase for scalable and professional application development.
+
+---
+
+---
+
+## Day 19 – Code Organization and Refactoring
+
+- Refactoring the Main class to improve readability
+- Separating test logic into dedicated methods per learning day
+- Improving code organization without changing functionality
+- Applying clean code principles to existing Java projects
+- Preparing the project structure for future testing and scalability
+
+On this day, I focused on organizing and refactoring my existing code instead of adding new features.
+
+I cleaned up the main method by extracting daily tests into separate methods, making the program easier to read, maintain, and extend.
+
+This refactoring reflects real-world Java development practices, where improving code structure and clarity is just as important as learning new language features.
 
 ---
 
