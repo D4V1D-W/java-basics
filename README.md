@@ -259,6 +259,25 @@ This refactoring reflects real-world Java development practices, where improving
 
 ---
 
+---
+
+## Day 20 – Enums and Clean Domain Modeling
+
+- Introduction to enums in Java
+- Replacing magic strings with controlled enum values
+- Improving type safety and code readability
+- Refactoring existing classes to use enums
+- Applying cleaner domain modeling practices
+
+On this day, I learned how to use enums to represent fixed sets of values instead of relying on raw strings.
+
+I refactored existing classes to replace repeated string values with enums, reducing potential errors and improving code clarity.
+
+This approach reflects real-world Java development practices, where enums are commonly used to model states, categories, and domain-specific values.
+
+---
+
+
 
   
 
