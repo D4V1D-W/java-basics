@@ -257,9 +257,7 @@ I cleaned up the main method by extracting daily tests into separate methods, ma
 
 This refactoring reflects real-world Java development practices, where improving code structure and clarity is just as important as learning new language features.
 
----
-
----
+---TOMORROW
 
 ## Day 20 – Enums and Clean Domain Modeling
 
