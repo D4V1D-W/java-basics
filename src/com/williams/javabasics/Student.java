@@ -4,9 +4,9 @@ package com.williams.javabasics;
 
 public class Student extends Person {
 	
-	String career;
+	private Career career;
 	
-    public Student(String name,int age,String career) {
+    public Student(String name,int age,Career career) {
 	    super(name,age);
 	    this.career= career;
     }
@@ -16,7 +16,7 @@ public class Student extends Person {
 
     @Override	
     public void greet() {
-	    System.out.println("Hi I'm Studen ");
+	    System.out.println("Hi, I'm Studen ");
     }
 
     @Override
@@ -24,5 +24,7 @@ public class Student extends Person {
 	    super.showInfo();
 	    System.out.println("Career: "+career);
     }
+    
+    
 
 }
