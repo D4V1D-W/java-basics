@@ -275,6 +275,25 @@ This approach reflects real-world Java development practices, where enums are co
 
 ---
 
+---
+
+## Day 21 – Separation of Responsibilities and Clean Design
+
+- Applying Single Responsibility Principle (SRP)
+- Avoiding bloated models in object-oriented design
+- Separating validation logic from domain models
+- Improving code maintainability and clarity
+- Preparing the project structure for future scalability (Spring Boot-ready)
+
+On this day, I focused on improving the overall design of the application by ensuring that each class has a clear and single responsibility.
+
+I avoided placing excessive logic inside the Person model, reinforcing the idea that domain models should represent data and behavior, not handle all validations or business rules.
+
+This approach leads to cleaner, more professional Java code and prepares the project for future growth and integration with frameworks like Spring Boot.
+
+---
+
+
 
 
 
