@@ -12,8 +12,8 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 19
-📊 Practices completed: 19
+🔄 Consecutive days: 20
+📊 Practices completed: 20
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
@@ -257,7 +257,7 @@ I cleaned up the main method by extracting daily tests into separate methods, ma
 
 This refactoring reflects real-world Java development practices, where improving code structure and clarity is just as important as learning new language features.
 
----TOMORROW
+---
 
 ## Day 20 – Enums and Clean Domain Modeling
 
@@ -273,7 +273,8 @@ I refactored existing classes to replace repeated string values with enums, redu
 
 This approach reflects real-world Java development practices, where enums are commonly used to model states, categories, and domain-specific values.
 
----
+---Tomorrow
+
 
 
 
