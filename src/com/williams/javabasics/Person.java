@@ -7,11 +7,7 @@ public abstract class Person {
     protected int age;
 
     public Person (String name,int age) {
-    	
-    	if (age < 0) {
-            throw new InvalidAgeException("Age cannot be negative");
-        }
-    	 
+        PersonValidator.validateAge(age);
 	    this.name = name;
 	    this.age = age;
     }
