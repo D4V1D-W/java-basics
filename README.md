@@ -275,8 +275,6 @@ This approach reflects real-world Java development practices, where enums are co
 
 ---
 
----
-
 ## Day 21 – Separation of Responsibilities and Clean Design
 
 - Applying Single Responsibility Principle (SRP)
