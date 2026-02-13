@@ -291,6 +291,21 @@ This approach leads to cleaner, more professional Java code and prepares the pro
 
 ---
 
+## Day 22 – Service Layer and Business Logic Separation
+
+- Introducing the Service layer in Java applications
+- Moving business logic out of domain models
+- Coordinating validations and operations through services
+- Improving testability and code organization
+- Aligning the project structure with real-world backend architectures
+
+On this day, I introduced a Service layer to handle business logic and application workflows, keeping domain models clean and focused on their core responsibilities.
+
+By centralizing operations inside services, the codebase becomes easier to maintain, test, and extend without modifying core entities.
+
+This structure closely mirrors professional Java and Spring Boot applications, where services act as the bridge between controllers and domain models.
+
+---
 
 
 
