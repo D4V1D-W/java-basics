@@ -289,7 +289,7 @@ I avoided placing excessive logic inside the Person model, reinforcing the idea 
 
 This approach leads to cleaner, more professional Java code and prepares the project for future growth and integration with frameworks like Spring Boot.
 
----
+---tomorrow
 
 ## Day 22 – Service Layer and Business Logic Separation
 
