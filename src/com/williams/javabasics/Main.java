@@ -1,5 +1,5 @@
 /*Day 21: Separate validations and improve responsibility of Person class
-*/
+ */
 
 package com.williams.javabasics;
 import java.util.ArrayList;
@@ -7,69 +7,95 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
-    	
-    	        day11testAnimals();
-    	        day13testAbstractClasses();
-    	        day14testPolymorphism();
-    	        day18CustomExceptions();
-    	    }
+	public static void main(String[] args) {
+
+		day11testAnimals();
+		day13testAbstractClasses();
+		day14testPolymorphism();
+		day18CustomExceptions();
+		day22ServiceLayer();
+	}
 
 
 
-			private static void day11testAnimals() {
-    	        System.out.println("=== Day 11: Animals ===");
-    	        Animal a1 = new Dog();
-    	        Animal a2 = new Cat();
-    	        a1.MakeSound();
-    	        System.out.println("----");
-    	        a2.MakeSound();
-    	    }
+	private static void day11testAnimals() {
+		System.out.println("=== Day 11: Animals ===");
+		Animal a1 = new Dog();
+		Animal a2 = new Cat();
+		a1.MakeSound();
+		System.out.println("----");
+		a2.MakeSound();
+	}
 
-    	    private static void day13testAbstractClasses() {
-    	        System.out.println("=== Day 12-13 ===");
-    	        Person t = new Teacher("Jose", 40, Subject.PHYSICS);
-    	        Person s = new Student("Williams", 22,Career.MATHEMATICS);
-    	        t.greet();
-    	        System.out.println("----");
-    	        s.greet();
-    	    }
+	private static void day13testAbstractClasses() {
+		System.out.println("=== Day 12-13 ===");
+		Person t = new Teacher("Jose", 40, Subject.PHYSICS);
+		Person s = new Student("Williams", 22,Career.MATHEMATICS);
+		t.greet();
+		System.out.println("----");
+		s.greet();
+	}
 
-    	    private static void day14testPolymorphism() {
-    	        System.out.println("=== Day 14 ===");
-    	        List<Person> people = new ArrayList<>();
-    	        people.add(new Teacher("Ana", 30, Subject.HISTORY));
-    	        people.add(new Student("Carlos", 20, Career.SYSTEMS_ENGINEERING));
-    	        for (Person p : people) {
-    	            p.showInfo();
-    	            System.out.println("----");
-    	        }
-    	    }
+	private static void day14testPolymorphism() {
+		System.out.println("=== Day 14 ===");
+		List<Person> people = new ArrayList<>();
+		people.add(new Teacher("Ana", 30, Subject.HISTORY));
+		people.add(new Student("Carlos", 20, Career.SYSTEMS_ENGINEERING));
+		for (Person p : people) {
+			p.showInfo();
+			System.out.println("----");
+		}
+	}
 
 
-    	    
-	        private static void day18CustomExceptions () {
 
-	            try {
-	                List<Person> people1 = new ArrayList<>();
+	private static void day18CustomExceptions () {
 
-	                people1.add(new Student("Dave", -20, Career.SYSTEMS_ENGINEERING));
-	                people1.add(new Teacher("Ana", 30,Subject.MATH));
+		try {
+			List<Person> people1 = new ArrayList<>();
 
-	                for (Person p : people1) {
-	                    p.greet();
-	                    p.showInfo();
-	                    System.out.println("-----");
-	                }
+			people1.add(new Student("Dave", -20, Career.SYSTEMS_ENGINEERING));
+			people1.add(new Teacher("Ana", 30,Subject.MATH));
 
-	            } catch (InvalidAgeException e) {
-	                System.out.println("Error: " + e.getMessage());
-	            }
+			for (Person p : people1) {
+				p.greet();
+				p.showInfo();
+				System.out.println("-----");
+			}
 
-	            System.out.println("Program finished");
-	        }
+		} catch (InvalidAgeException e) {
+			System.out.println("Error: " + e.getMessage());
+		}
+
+		System.out.println("Program finished");
+	}
+
+
+	private static void day22ServiceLayer() {
+		System.out.println("=== Day 22: Service Layer ===");
+
+		PersonService service = new PersonService();
+
+		service.register(new Student("Williams", 22,Career.MATHEMATICS ));
+		service.register(new Teacher("Ana", 35, Subject.PHYSICS));
+		service.register(new Student("Carlos", 20, Career.SYSTEMS_ENGINEERING));
+
+		System.out.println("\n-- All people --");
+		service.listAll();
+
+		System.out.println("Total registered: " + service.count());
+
+		System.out.println("\n-- Search --");
+		Person found = service.findByName("Ana");
+		if (found != null) {
+			found.greet();
+		} else {
+			System.out.println("Person not found.");
+		}
+
+	}
+
 }
 
 
-	
 
