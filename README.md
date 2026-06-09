@@ -12,8 +12,8 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 20
-📊 Practices completed: 20
+🔄 Consecutive days: 21
+📊 Practices completed: 21
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
@@ -273,7 +273,39 @@ I refactored existing classes to replace repeated string values with enums, redu
 
 This approach reflects real-world Java development practices, where enums are commonly used to model states, categories, and domain-specific values.
 
----Tomorrow
+---
+
+## Day 21 – Separation of Responsibilities and Clean Design
+
+- Applying Single Responsibility Principle (SRP)
+- Avoiding bloated models in object-oriented design
+- Separating validation logic from domain models
+- Improving code maintainability and clarity
+- Preparing the project structure for future scalability (Spring Boot-ready)
+
+On this day, I focused on improving the overall design of the application by ensuring that each class has a clear and single responsibility.
+
+I avoided placing excessive logic inside the Person model, reinforcing the idea that domain models should represent data and behavior, not handle all validations or business rules.
+
+This approach leads to cleaner, more professional Java code and prepares the project for future growth and integration with frameworks like Spring Boot.
+
+---tomorrow
+
+## Day 22 – Service Layer and Business Logic Separation
+
+- Introducing the Service layer in Java applications
+- Moving business logic out of domain models
+- Coordinating validations and operations through services
+- Improving testability and code organization
+- Aligning the project structure with real-world backend architectures
+
+On this day, I introduced a Service layer to handle business logic and application workflows, keeping domain models clean and focused on their core responsibilities.
+
+By centralizing operations inside services, the codebase becomes easier to maintain, test, and extend without modifying core entities.
+
+This structure closely mirrors professional Java and Spring Boot applications, where services act as the bridge between controllers and domain models.
+
+---
 
 
 
