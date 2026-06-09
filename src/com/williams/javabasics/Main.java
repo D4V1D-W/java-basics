@@ -1,4 +1,5 @@
-/*Day 20 - Introduced enums and improved domain modeling*/
+/*Day 21: Separate validations and improve responsibility of Person class
+*/
 
 package com.williams.javabasics;
 import java.util.ArrayList;
