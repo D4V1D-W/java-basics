@@ -1,5 +1,4 @@
-/*Day 21: Separate validations and improve responsibility of Person class
- */
+
 
 package com.williams.javabasics;
 import java.util.ArrayList;
@@ -14,6 +13,7 @@ public class Main {
 		day14testPolymorphism();
 		day18CustomExceptions();
 		day22ServiceLayer();
+		day23Generics();
 	}
 
 
@@ -94,6 +94,33 @@ public class Main {
 		}
 
 	}
+	
+	private static void day23Generics() {
+	    System.out.println("=== Day 23: Generics ===");
+
+	    System.out.println("-- Generic with Strings --");
+	    GenericService<String> stringService = new GenericService<>();
+	    stringService.add("Java");
+	    stringService.add("Spring Boot");
+	    stringService.add("Generics");
+	    stringService.listAll();
+	    System.out.println("Count: " + stringService.count());
+
+	    System.out.println("\n-- Bounded Generic with Person --");
+	    BoundedPersonService<Person> personService = new BoundedPersonService<>();
+	    personService.add(new Student("Williams", 22, Career.MATHEMATICS));
+	    personService.add(new Teacher("Ana", 35, Subject.PHYSICS));
+	    personService.listAll();
+
+	    Person found = personService.findByName("Ana");
+	    if (found != null) {
+	        found.greet();
+	    } else {
+	        System.out.println("Not found.");
+	    }
+	}
+	
+	
 
 }
 
