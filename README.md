@@ -307,6 +307,25 @@ This structure closely mirrors professional Java and Spring Boot applications, w
 
 ---
 
+## Day 23 – Generics
+
+- Introduction to Generics in Java
+- Creating reusable classes with type parameters using <T>
+- Applying bounded generics with <T extends Person>
+- Understanding why Generic types are essential in Java collections
+- Connecting Generics to real-world Spring Boot patterns like JpaRepository<T, ID>
+
+On this day, I learned how to create generic classes that work with any type,
+and how to restrict them using bounded type parameters.
+
+By using <T extends Person>, I was able to call Person methods inside the service
+without losing flexibility, making the code reusable and type-safe.
+
+This concept is fundamental for understanding how Spring Data repositories work
+under the hood, where JpaRepository<Person, Long> follows the exact same pattern.
+
+---
+
 
 
 
