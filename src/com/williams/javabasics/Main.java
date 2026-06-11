@@ -19,6 +19,7 @@ public class Main {
 		day25Streams();
 		day26Lambdas();
 		day27HashMap();
+		day28BuilderPattern();
 	}
 
 
@@ -213,6 +214,37 @@ public class Main {
 		    registry.getAll().forEach(p -> System.out.println(p.getName()));
 		}
 		
+		private static void day28BuilderPattern() {
+		    System.out.println("=== Day 28: Builder Pattern ===");
+
+		    // Sin Builder — no sabes qué es cada parámetro
+		    // new PersonResponse("Williams", 22, "Student", "Mathematics") — confuso
+
+		    // Con Builder — cada campo es explícito
+		    PersonResponse response1 = new PersonResponse.Builder()
+		            .name("Williams")
+		            .age(22)
+		            .type("Student")
+		            .detail(Career.MATHEMATICS.toString())
+		            .build();
+
+		    PersonResponse response2 = new PersonResponse.Builder()
+		            .name("Ana")
+		            .age(35)
+		            .type("Teacher")
+		            .detail(Subject.PHYSICS.toString())
+		            .build();
+
+		    // Puedes omitir campos opcionales sin romper nada
+		    PersonResponse response3 = new PersonResponse.Builder()
+		            .name("Carlos")
+		            .age(20)
+		            .build();
+
+		    System.out.println(response1);
+		    System.out.println(response2);
+		    System.out.println(response3);
+		}
 	}
 
 
