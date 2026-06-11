@@ -326,6 +326,23 @@ under the hood, where JpaRepository<Person, Long> follows the exact same pattern
 
 ---
 
+## Day 24 – Optional
+
+- Introduction to Optional<T> in Java
+- Eliminating null returns to prevent NullPointerException
+- Using Optional.of(), Optional.empty(), and ifPresentOrElse()
+- Refactoring findByName() in PersonService and BoundedPersonService
+- Aligning the codebase with Spring Data patterns like findById()
+
+On this day, I refactored the findByName() method across services to return
+Optional<T> instead of null, eliminating a common source of runtime crashes.
+
+Using Optional forces the caller to handle the case where no result is found,
+making the code safer and more expressive.
+
+This approach directly mirrors how Spring Data JPA handles queries, where
+findById() returns Optional<Person> instead of a raw nullable object.
+
 
 
 
