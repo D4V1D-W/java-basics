@@ -2,6 +2,7 @@ package com.williams.javabasics;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class PersonService {
 	
@@ -26,15 +27,15 @@ public class PersonService {
 	}
 	
 	// Search by name (returns null if it doesn't exist — Day 24 we improved it with Optional)
-    public Person findByName(String name) {
+    public Optional<Person> findByName(String name) {
         for (Person p : people) {
             if (p.getName().equalsIgnoreCase(name)) {
-                return p;
+                return Optional.of(p);
             }
         }
-        return null;
+        return Optional.empty();
     }
-	
+    
     //count registered people
     public int count() {
         return people.size();

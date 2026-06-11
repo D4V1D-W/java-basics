@@ -3,6 +3,7 @@
 package com.williams.javabasics;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Main {
 
@@ -86,43 +87,42 @@ public class Main {
 		System.out.println("Total registered: " + service.count());
 
 		System.out.println("\n-- Search --");
-		Person found = service.findByName("Ana");
-		if (found != null) {
-			found.greet();
-		} else {
-			System.out.println("Person not found.");
+		Optional<Person> found = service.findByName("Ana");
+		found.ifPresentOrElse(
+				p -> p.greet(),
+				() -> System.out.println("Person not found.")
+				);
+	}
+
+		private static void day23Generics() {
+			System.out.println("=== Day 23: Generics ===");
+
+			System.out.println("-- Generic with Strings --");
+			GenericService<String> stringService = new GenericService<>();
+			stringService.add("Java");
+			stringService.add("Spring Boot");
+			stringService.add("Generics");
+			stringService.listAll();
+			System.out.println("Count: " + stringService.count());
+
+			System.out.println("\n-- Bounded Generic with Person --");
+			BoundedPersonService<Person> personService = new BoundedPersonService<>();
+			personService.add(new Student("Williams", 22, Career.MATHEMATICS));
+			personService.add(new Teacher("Ana", 35, Subject.PHYSICS));
+			personService.listAll();
+
+			Optional<Person> found = personService.findByName("Ana");
+			found.ifPresentOrElse(
+					p -> p.greet(),
+					() -> System.out.println("Not found.")
+					);
+
 		}
-
 	}
-	
-	private static void day23Generics() {
-	    System.out.println("=== Day 23: Generics ===");
 
-	    System.out.println("-- Generic with Strings --");
-	    GenericService<String> stringService = new GenericService<>();
-	    stringService.add("Java");
-	    stringService.add("Spring Boot");
-	    stringService.add("Generics");
-	    stringService.listAll();
-	    System.out.println("Count: " + stringService.count());
 
-	    System.out.println("\n-- Bounded Generic with Person --");
-	    BoundedPersonService<Person> personService = new BoundedPersonService<>();
-	    personService.add(new Student("Williams", 22, Career.MATHEMATICS));
-	    personService.add(new Teacher("Ana", 35, Subject.PHYSICS));
-	    personService.listAll();
 
-	    Person found = personService.findByName("Ana");
-	    if (found != null) {
-	        found.greet();
-	    } else {
-	        System.out.println("Not found.");
-	    }
-	}
-	
-	
 
-}
 
 
 
