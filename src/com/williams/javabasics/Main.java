@@ -15,6 +15,7 @@ public class Main {
 		day18CustomExceptions();
 		day22ServiceLayer();
 		day23Generics();
+		day25Streams();
 	}
 
 
@@ -118,6 +119,35 @@ public class Main {
 					);
 
 		}
+		
+		private static void day25Streams() {
+		    System.out.println("=== Day 25: Stream API ===");
+
+		    PersonService service = new PersonService();
+		    service.register(new Student("Williams", 22, Career.MATHEMATICS));
+		    service.register(new Teacher("Ana", 35, Subject.PHYSICS));
+		    service.register(new Student("Carlos", 20, Career.SYSTEMS_ENGINEERING));
+		    service.register(new Teacher("Luis", 45, Subject.MATH));
+
+		    System.out.println("\n-- All names --");
+		    service.getAllNames().forEach(System.out::println);
+
+		    System.out.println("\n-- Only students --");
+		    service.getStudents().forEach(p -> p.showInfo());
+
+		    System.out.println("\n-- Exists check --");
+		    System.out.println("Ana exists: " + service.exists("Ana"));
+		    System.out.println("Pedro exists: " + service.exists("Pedro"));
+
+		    System.out.println("\n-- Find by name --");
+		    service.findByName("Carlos").ifPresentOrElse(
+		            p -> p.greet(),
+		            () -> System.out.println("Not found.")
+		    );
+		}
+		
+		
+		
 	}
 
 
