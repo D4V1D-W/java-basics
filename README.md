@@ -420,6 +420,26 @@ and building in-memory stores before connecting to a real database.
 
 ---
 
+## Day 28 – Builder Pattern
+
+- Introduction to the Builder design pattern
+- Understanding the problem with long constructors
+- Creating a class with a private constructor and inner Builder
+- Using method chaining to build objects expressively
+- Handling optional fields without overloading constructors
+- Connecting Builder pattern to Lombok's @Builder in Spring Boot
+
+On this day, I implemented the Builder pattern manually to understand
+how clean object construction works in Java.
+
+Instead of passing all parameters in a constructor, the Builder allows
+setting only the fields you need, in any order, making the code
+significantly more readable and maintainable.
+
+This pattern is essential in Spring Boot, where Lombok's @Builder
+annotation generates this exact structure automatically — and now
+I understand what it does under the hood.
+
 
 
 
