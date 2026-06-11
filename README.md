@@ -394,9 +394,31 @@ interfaces are used constantly in service layers, stream pipelines,
 and repository operations.
 
 ---
-  
 
+## Day 27 – HashMap and Collections
 
+- Introduction to HashMap and the Map interface in Java
+- Understanding key-value storage vs index-based Lists
+- Using put(), get(), containsKey(), remove() and entrySet()
+- Iterating a Map using Map.Entry
+- Using Optional.ofNullable() for safe null handling
+- Creating a PersonRegistry class backed by a HashMap
+- Understanding when to use List vs Map vs Set
+
+On this day, I replaced the ArrayList-based service with a HashMap-based
+registry, where each person is stored and accessed by their name as a key.
+
+This approach makes lookups significantly faster and more expressive,
+since instead of iterating the entire list to find a person, we access
+them directly by key.
+
+I also learned the difference between List, Map and Set, and when each
+collection type is the right choice depending on the use case.
+
+This pattern is widely used in Spring Boot for caching, grouping data,
+and building in-memory stores before connecting to a real database.
+
+---
 
 
 
