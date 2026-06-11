@@ -18,6 +18,7 @@ public class Main {
 		day23Generics();
 		day25Streams();
 		day26Lambdas();
+		day27HashMap();
 	}
 
 
@@ -178,6 +179,38 @@ public class Main {
 		    Predicate<Person> isOver21 = p -> p.getAge() > 21;
 		    List<Person> result = PersonFilter.filter(people, isStudent.and(isOver21));
 		    result.forEach(p -> p.showInfo());
+		}
+		
+		private static void day27HashMap() {
+		    System.out.println("=== Day 27: HashMap and Collections ===");
+
+		    PersonRegistry registry = new PersonRegistry();
+
+		    registry.register(new Student("Williams", 22, Career.MATHEMATICS));
+		    registry.register(new Teacher("Ana", 35, Subject.PHYSICS));
+		    registry.register(new Student("Carlos", 20, Career.SYSTEMS_ENGINEERING));
+
+		    System.out.println("\n-- All people --");
+		    registry.listAll();
+
+		    System.out.println("Total: " + registry.count());
+
+		    System.out.println("\n-- Search --");
+		    registry.findByName("Ana").ifPresentOrElse(
+		            p -> p.greet(),
+		            () -> System.out.println("Not found.")
+		    );
+
+		    System.out.println("\n-- Exists check --");
+		    System.out.println("Williams exists: " + registry.exists("Williams"));
+		    System.out.println("Pedro exists: " + registry.exists("Pedro"));
+
+		    System.out.println("\n-- Remove --");
+		    registry.remove("Carlos");
+		    registry.remove("Pedro");
+
+		    System.out.println("\n-- After remove --");
+		    registry.getAll().forEach(p -> System.out.println(p.getName()));
 		}
 		
 	}
