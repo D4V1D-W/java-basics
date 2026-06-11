@@ -12,8 +12,8 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 24
-📊 Practices completed: 24
+🔄 Consecutive days: 26
+📊 Practices completed: 26
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
@@ -344,7 +344,7 @@ This approach directly mirrors how Spring Data JPA handles queries, where
 findById() returns Optional<Person> instead of a raw nullable object.
 
 
----tomorrow
+---
 
 ## Day 25 – Stream API
 
@@ -365,9 +365,35 @@ pipeline, reducing boilerplate and improving clarity.
 This approach is widely used in real-world Spring Boot services when
 processing collections returned from repositories.
 
+---
 
+## Day 26 – Lambdas and Functional Interfaces
 
+- Understanding lambdas as anonymous functions
+- Introduction to functional interfaces in Java
+- Using Predicate<T> to evaluate conditions
+- Using Function<T, R> to transform values
+- Using Consumer<T> to execute actions without returning a value
+- Using Supplier<T> to provide values without receiving parameters
+- Combining Predicates with .and(), .or(), .negate()
+- Creating a reusable PersonFilter class using functional interfaces
 
+On this day, I formalized what lambdas actually are and how they connect
+to functional interfaces in Java.
+
+I realized I had already been using lambdas in filter(), map(), forEach()
+and ifPresentOrElse() — this day gave me the vocabulary and structure
+to understand and use them intentionally.
+
+By creating PersonFilter with Predicate and Function parameters, I built
+a flexible and reusable utility that accepts any condition or transformation
+without modifying the class itself.
+
+This pattern is fundamental in Spring Boot, where lambdas and functional
+interfaces are used constantly in service layers, stream pipelines,
+and repository operations.
+
+---
   
 
 
