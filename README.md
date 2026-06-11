@@ -344,6 +344,28 @@ This approach directly mirrors how Spring Data JPA handles queries, where
 findById() returns Optional<Person> instead of a raw nullable object.
 
 
+---tomorrow
+
+## Day 25 – Stream API
+
+- Introduction to the Stream API in Java
+- Using filter() to select elements by condition
+- Using map() to transform collections into new types
+- Using findFirst() combined with Optional
+- Using anyMatch() to verify existence
+- Using forEach() and method references (::)
+- Replacing manual loops with cleaner and more expressive stream pipelines
+
+On this day, I refactored PersonService to use the Stream API instead of
+manual for loops, making the code more readable and expressive.
+
+Streams allow chaining operations like filter, map and collect in a single
+pipeline, reducing boilerplate and improving clarity.
+
+This approach is widely used in real-world Spring Boot services when
+processing collections returned from repositories.
+
+
 
 
   
