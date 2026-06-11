@@ -4,6 +4,7 @@ package com.williams.javabasics;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 public class Main {
 
@@ -16,6 +17,7 @@ public class Main {
 		day22ServiceLayer();
 		day23Generics();
 		day25Streams();
+		day26Lambdas();
 	}
 
 
@@ -146,7 +148,37 @@ public class Main {
 		    );
 		}
 		
-		
+		private static void day26Lambdas() {
+		    System.out.println("=== Day 26: Lambdas and Functional Interfaces ===");
+
+		    List<Person> people = new ArrayList<>();
+		    people.add(new Student("Williams", 22, Career.MATHEMATICS));
+		    people.add(new Teacher("Ana", 35, Subject.PHYSICS));
+		    people.add(new Student("Carlos", 20, Career.SYSTEMS_ENGINEERING));
+		    people.add(new Teacher("Luis", 45, Subject.MATH));
+
+		    // Predicate — filtrar estudiantes
+		    System.out.println("-- Students only --");
+		    List<Person> students = PersonFilter.filter(people, p -> p instanceof Student);
+		    students.forEach(p -> p.showInfo());
+
+		    // Predicate — filtrar mayores de 30
+		    System.out.println("\n-- Over 30 --");
+		    List<Person> over30 = PersonFilter.filter(people, p -> p.getAge() > 30);
+		    over30.forEach(p -> System.out.println(p.getName() + " - " + p.getAge()));
+
+		    // Function — extraer nombres
+		    System.out.println("\n-- All names --");
+		    List<String> names = PersonFilter.map(people, p -> p.getName());
+		    names.forEach(System.out::println);
+
+		    // Combinando Predicates
+		    System.out.println("\n-- Students over 21 --");
+		    Predicate<Person> isStudent = p -> p instanceof Student;
+		    Predicate<Person> isOver21 = p -> p.getAge() > 21;
+		    List<Person> result = PersonFilter.filter(people, isStudent.and(isOver21));
+		    result.forEach(p -> p.showInfo());
+		}
 		
 	}
 
