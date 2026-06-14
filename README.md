@@ -12,8 +12,8 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 26
-📊 Practices completed: 26
+🔄 Consecutive days: 28
+📊 Practices completed: 28
 🏆 Mini-projects: 0
 🎯 Final project: To be defined
 ```
@@ -419,6 +419,48 @@ This pattern is widely used in Spring Boot for caching, grouping data,
 and building in-memory stores before connecting to a real database.
 
 ---
+
+## Day 28 – Builder Pattern
+
+- Introduction to the Builder design pattern
+- Understanding the problem with long constructors
+- Creating a class with a private constructor and inner Builder
+- Using method chaining to build objects expressively
+- Handling optional fields without overloading constructors
+- Connecting Builder pattern to Lombok's @Builder in Spring Boot
+
+On this day, I implemented the Builder pattern manually to understand
+how clean object construction works in Java.
+
+Instead of passing all parameters in a constructor, the Builder allows
+setting only the fields you need, in any order, making the code
+significantly more readable and maintainable.
+
+This pattern is essential in Spring Boot, where Lombok's @Builder
+annotation generates this exact structure automatically — and now
+I understand what it does under the hood.
+
+---
+
+## Day 29 – Mini Project: School Service
+
+- Integrating all concepts learned from Day 22 to Day 28
+- Building a SchoolService that combines Service Layer, HashMap, Streams,
+  Optional, Lambdas, Predicate and Builder Pattern
+- Generating a complete school report using stream pipelines
+- Filtering students and teachers using combined Predicates
+- Building PersonResponse objects using the Builder pattern
+- Applying getters to access subclass-specific fields
+
+On this day, I built a mini project that brings together every concept
+learned in the previous days into a single cohesive service.
+
+Instead of practicing each concept in isolation, SchoolService demonstrates
+how they work together in a real flow: register, filter, search, transform
+and report — exactly the kind of logic a Spring Boot service handles.
+
+This day marks the end of the Java basics phase and confirms that the
+foundation is solid enough to start building with Spring Boot.
 
 
 
