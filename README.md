@@ -12,9 +12,9 @@ Progress Metrics
 ```bash
 # Current status:
 ✅ First repository created
-🔄 Consecutive days: 28
-📊 Practices completed: 28
-🏆 Mini-projects: 0
+🔄 Consecutive days: 30
+📊 Practices completed: 30
+🏆 Mini-projects: 1
 🎯 Final project: To be defined
 ```
 
@@ -461,6 +461,55 @@ and report — exactly the kind of logic a Spring Boot service handles.
 
 This day marks the end of the Java basics phase and confirms that the
 foundation is solid enough to start building with Spring Boot.
+
+---
+
+## Day 30 – Final Refactor and Repository Closing
+
+- Reorganizing Main.java with section comments
+- Reviewing all concepts learned across 30 days
+- Ensuring all classes follow Single Responsibility Principle
+- Preparing the codebase for portfolio presentation
+- Closing the Java basics phase and transitioning to Spring Boot
+
+On this day, I reviewed and reorganized the entire project to leave it
+clean, readable, and portfolio-ready.
+
+The Main class now reflects a clear progression from OOP fundamentals
+to architecture patterns, showing how each concept builds on the previous.
+
+This repository represents 30 days of consistent daily practice, going
+from variables and conditionals to Service Layers, Streams, Generics,
+Optional, Lambdas, HashMap and Builder Pattern.
+
+The foundation is solid. Time to build with Spring Boot.
+
+---
+
+## What I learned in 30 days
+
+| Days   | Topic                        |
+|--------|------------------------------|
+| 1-5    | Variables, loops, methods    |
+| 6-10   | OOP: classes, inheritance    |
+| 11-13  | Interfaces, abstract classes |
+| 14-16  | Polymorphism, collections    |
+| 17-18  | Exception handling           |
+| 19-21  | Clean code, SRP, enums       |
+| 22     | Service Layer                |
+| 23     | Generics                     |
+| 24     | Optional                     |
+| 25     | Stream API                   |
+| 26     | Lambdas, functional interfaces|
+| 27     | HashMap, collections         |
+| 28     | Builder Pattern              |
+| 29     | Mini-project integrador      |
+| 30     | Final refactor               |
+
+---
+
+## Next step: Spring Boot
+🚀 Starting a new repository to build a REST API from scratch.
 
 
 
