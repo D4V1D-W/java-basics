@@ -29,9 +29,7 @@ public abstract class Person {
         System.out.println("Age: " + age);
     }
     
-    public Subject getSubject() {
-        return subject;
-    }
+  
 }
 
 
