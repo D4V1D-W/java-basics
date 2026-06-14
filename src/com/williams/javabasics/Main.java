@@ -20,6 +20,8 @@ public class Main {
 		day26Lambdas();
 		day27HashMap();
 		day28BuilderPattern();
+		day29MiniProject();
+		
 	}
 
 
@@ -244,6 +246,36 @@ public class Main {
 		    System.out.println(response1);
 		    System.out.println(response2);
 		    System.out.println(response3);
+		}
+		
+		private static void day29MiniProject() {
+		    System.out.println("=== Day 29: Mini Project ===");
+
+		    SchoolService school = new SchoolService();
+
+		    // Registrar personas
+		    school.register(new Student("Williams", 22, Career.MATHEMATICS));
+		    school.register(new Teacher("Ana", 35, Subject.PHYSICS));
+		    school.register(new Student("Carlos", 20, Career.SYSTEMS_ENGINEERING));
+		    school.register(new Teacher("Luis", 45, Subject.MATH));
+		    school.register(new Student("Maria", 23, Career.MATHEMATICS));
+
+		    // Reporte completo
+		    school.printReport();
+
+		    // Buscar con Optional
+		    System.out.println("\n-- Search --");
+		    school.findByName("Ana").ifPresentOrElse(
+		            p -> System.out.println(school.buildResponse(p)),
+		            () -> System.out.println("Not found.")
+		    );
+
+		    // Filtrar con Predicate combinado
+		    System.out.println("\n-- Students over 21 --");
+		    Predicate<Person> isStudent = p -> p instanceof Student;
+		    Predicate<Person> isOver21 = p -> p.getAge() > 21;
+		    school.filter(isStudent.and(isOver21))
+		            .forEach(p -> System.out.println(school.buildResponse(p)));
 		}
 	}
 

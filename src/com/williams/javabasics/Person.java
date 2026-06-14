@@ -28,6 +28,10 @@ public abstract class Person {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
+    
+    public Subject getSubject() {
+        return subject;
+    }
 }
 
 

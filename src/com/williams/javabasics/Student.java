@@ -25,6 +25,8 @@ public class Student extends Person {
 	    System.out.println("Career: "+career);
     }
     
-    
+    public Career getCareer() {
+        return career;
+    }
 
 }

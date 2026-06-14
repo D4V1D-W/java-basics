@@ -20,4 +20,8 @@ public class Teacher extends Person implements Greetable {
     	super.showInfo();
     	System.out.println("Subject: "+subject);
     }
+    
+    public Subject getSubject() {
+        return subject;
+    }
 }
